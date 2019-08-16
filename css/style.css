@@ -1,0 +1,151 @@
+/**********************
+* Reset
+**********************/
+* {
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'B612 Mono', monospace;
+}
+
+/**********************
+* General
+**********************/
+html {
+    height: 100%;
+    background: url('../images/math11.jpg') rgb(98, 156, 175) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.outer-wrapper {
+    --widthOuter: 300px;
+    width: var(--widthOuter);
+    margin: 100px auto;
+    padding-bottom: 5px;
+    --borderOuter: 5px;
+    border-radius: 2%; 
+    background: linear-gradient(to top right, #72a4ca7d, #958ba7, #4273997d);
+    padding-top: 5px;
+    box-shadow: 2px 2px 8px;
+}
+
+/**********************
+* Display and Buttons
+**********************/
+.display-wrapper {
+    background-color: #fffffff3;
+}
+
+.display-wrapper,
+.buttons-wrapper {
+    width: calc(var(--widthOuter) - var(--borderOuter) * 2);
+    margin: auto;
+}
+
+.display,
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: calc(var(--widthOuter) - var(--borderOuter) * 2);
+}
+
+.display {
+    height: 50px;
+    font-size: 30px;
+    justify-content: flex-end;
+    padding-right: 5px;
+    line-height: 50px;
+}
+
+.equation {
+    font-size: 20px;
+}
+
+button {
+    flex: 1;
+    border-style: outset;
+    height: 50px;
+    background-image: linear-gradient(to top left, rgb(53, 134, 162), rgba(39, 121, 137, 0.397));
+}
+
+.last button:nth-child(3) {
+    order: 2;
+}
+
+/**********************
+* Information elements
+**********************/
+.deleteBox {
+    height: 50px;
+}
+
+.deleteInfo,
+.deleteOrContinueInfo,
+.toManyNumbsInfo {
+    background: rgb(193, 255, 138);
+    height: auto;
+    line-height: 2.5;
+    text-align: center;
+    display: none;
+}
+
+.deleteOrContinueInfo {
+    background: rgb(222, 21, 8);
+}
+
+.toManyNumbsInfo {
+    background: rgb(222, 94, 5);
+}
+
+/**********************
+* Pseudo Classes
+**********************/
+button:hover {
+    background-image: radial-gradient(circle, #1a93a9bf, #acd6e6);
+} 
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-image: radial-gradient(circle, #44b6ca66, #e9eef17d);
+    border-style: inset;
+}
+
+/**********************
+* Animation
+**********************/
+.button-active {
+    animation: buttActive .5s linear;
+    border-style: inset;
+}
+.button-inactive {
+    border-style: outset;
+}
+
+@keyframes buttActive {
+    from {
+         background-image: radial-gradient(circle, #9ecad2bf, #fbf1f87a);
+    }
+    to {
+        background-image: radial-gradient(circle, #9ecad2bf, #fbf1f87a);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

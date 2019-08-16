@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <!-- Favicon for all Web and mobile devices  -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./faviconAllDevices/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./faviconAllDevices/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./faviconAllDevices/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./faviconAllDevices/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./faviconAllDevices/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./faviconAllDevices/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./faviconAllDevices/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./faviconAllDevices/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./faviconAllDevices/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./faviconAllDevices/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./faviconAllDevices/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./faviconAllDevices/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./faviconAllDevices/favicon-16x16.png">
+        <link rel="manifest" href="./faviconAllDevices/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Calculator application">
+        <meta name="keywords" content="calculator,addition,subtraction,multiplication,division,root,calculation,operation">
+        <meta name="author" content="Kamil Zoglo">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=B612+Mono:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <div class='deleteBox'>
+            <div class="deleteInfo">
+                Use <strong>'delete'</strong> key on a keyboard or <strong>'del'</strong> button.
+            </div>
+            <div class="deleteOrContinueInfo">
+                Use <strong>'delete'</strong> key on a keyboard, <strong>'del'</strong> button, <strong>continue calculation</strong>
+                    or <strong>start a new one</strong> with any number button.
+            </div>
+            <div class="toManyNumbsInfo">
+                <strong>To many numbers!</strong>
+            </div>
+        </div>
+            
+        <div class="outer-wrapper">
+            <!-- DISPLAY -->
+            <div class="display-wrapper">
+                <div class="equation display"></div>
+                <div class="number display"></div>
+            </div>
+            <!-- BUTTONS -->
+            <div class="buttons-wrapper">
+                <div class="buttons">
+                    <button type='button'>back</button>
+                    <button type='button'>del</button>
+                    <button type='button'>(+/-)</button>
+                    <button type='button'>√</button>
+                </div>
+                <div class="buttons">
+                    <button type='button'>7</button>
+                    <button type='button'>8</button>
+                    <button type='button'>9</button>
+                    <button type='button'>/</button>
+                </div>
+                <div class="buttons">
+                    <button type='button'>4</button>
+                    <button type='button'>5</button>
+                    <button type='button'>6</button>
+                    <button type='button'>*</button>
+                </div>
+                <div class="buttons">
+                    <button type='button'>1</button>
+                    <button type='button'>2</button>
+                    <button type='button'>3</button>
+                    <button type='button'>-</button>
+                </div>
+                <div class="buttons last">
+                    <button type='button'>0</button>
+                    <button type='button'>,</button>
+                    <button type='button'>+</button>
+                    <button type='button'>=</button>
+                </div>     
+            </div>      
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src='calcController.js' type="module"></script>
+    </body>
+</html>
