@@ -29,65 +29,65 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link href="https://fonts.googleapis.com/css?family=B612+Mono:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
 
     <body>
-        <div class='deleteBox'>
-            <div class="deleteInfo">
+        <div id='info-wrapper'>
+            <div class="info info--delete">
                 Use <strong>'delete'</strong> key on a keyboard or <strong>'del'</strong> button.
             </div>
-            <div class="deleteOrContinueInfo">
+            <div class="info info--delete-cont">
                 Use <strong>'delete'</strong> key on a keyboard, <strong>'del'</strong> button, <strong>continue calculation</strong>
                     or <strong>start a new one</strong> with any number button.
             </div>
-            <div class="toManyNumbsInfo">
+            <div class="info info--toManyNumbs">
                 <strong>To many numbers!</strong>
             </div>
         </div>
             
-        <div class="outer-wrapper">
+        <div id="main">
             <!-- DISPLAY -->
-            <div class="display-wrapper">
-                <div class="equation display"></div>
-                <div class="number display"></div>
+            <div id="display-wrapper">
+                <div class="display display--equation"></div>
+                <div class="display"></div>
             </div>
             <!-- BUTTONS -->
-            <div class="buttons-wrapper">
-                <div class="buttons">
-                    <button type='button'>back</button>
-                    <button type='button'>del</button>
-                    <button type='button'>(+/-)</button>
-                    <button type='button'>√</button>
+            <div id="buttons-wrapper">
+                <div class="buttons-row">
+                    <button type='button' class="btn">back</button>
+                    <button type='button' class="btn">del</button>
+                    <button type='button' class="btn">(+/-)</button>
+                    <button type='button' class="btn">√</button>
                 </div>
-                <div class="buttons">
-                    <button type='button'>7</button>
-                    <button type='button'>8</button>
-                    <button type='button'>9</button>
-                    <button type='button'>/</button>
+                <div class="buttons-row">
+                    <button type='button' class="btn">7</button>
+                    <button type='button' class="btn">8</button>
+                    <button type='button' class="btn">9</button>
+                    <button type='button' class="btn">/</button>
                 </div>
-                <div class="buttons">
-                    <button type='button'>4</button>
-                    <button type='button'>5</button>
-                    <button type='button'>6</button>
-                    <button type='button'>*</button>
+                <div class="buttons-row">
+                    <button type='button' class="btn">4</button>
+                    <button type='button' class="btn">5</button>
+                    <button type='button' class="btn">6</button>
+                    <button type='button' class="btn">*</button>
                 </div>
-                <div class="buttons">
-                    <button type='button'>1</button>
-                    <button type='button'>2</button>
-                    <button type='button'>3</button>
-                    <button type='button'>-</button>
+                <div class="buttons-row">
+                    <button type='button' class="btn">1</button>
+                    <button type='button' class="btn">2</button>
+                    <button type='button' class="btn">3</button>
+                    <button type='button' class="btn">-</button>
                 </div>
-                <div class="buttons last">
-                    <button type='button'>0</button>
-                    <button type='button'>,</button>
-                    <button type='button'>+</button>
-                    <button type='button'>=</button>
+                <div class="buttons-row">
+                    <button type='button' class="btn">0</button>
+                    <button type='button' class="btn">,</button>
+                    <button type='button' class="btn btn--replaced">+</button>
+                    <button type='button' class="btn">=</button>
                 </div>     
             </div>      
         </div>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src='calcController.js' type="module"></script>
+        <script src='./js/calcController.js' type="module"></script>
     </body>
 </html>
