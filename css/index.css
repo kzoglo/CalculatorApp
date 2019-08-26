@@ -1,0 +1,169 @@
+/* VARIABLES */
+/* BASE RULES */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'B612 Mono', monospace;
+}
+
+html {
+  height: 100%;
+  background: url("../images/math11.jpg") #629caf no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+/* LAYOUT RULES */
+/**********************
+* WRAPPERS
+**********************/
+/** Information **/
+#info-wrapper {
+  height: 50px;
+}
+
+/** Main content **/
+#main {
+  width: 300px;
+  margin: 100px auto;
+  padding-bottom: 5px;
+  border-radius: 2%;
+  background: -webkit-gradient(linear, left bottom, right top, from(#72a4ca7d), color-stop(#958ba7), to(#4273997d));
+  background: linear-gradient(to top right, #72a4ca7d, #958ba7, #4273997d);
+  padding-top: 5px;
+  -webkit-box-shadow: 2px 2px 8px;
+          box-shadow: 2px 2px 8px;
+}
+
+/** Display and Buttons **/
+#buttons-wrapper, #display-wrapper {
+  width: calc(300px - 5px * 2);
+  margin: auto;
+}
+
+#display-wrapper {
+  background-color: #fffffff3;
+}
+
+/* MODULES RULES */
+.info {
+  background: #aa1313;
+  height: auto;
+  line-height: 2.5;
+  text-align: center;
+  display: none;
+}
+
+.info--delete {
+  background: #c1ff8a;
+}
+
+.info--delete-cont {
+  background: #de1508;
+}
+
+.info--toManyNumbs {
+  background: #de5e05;
+}
+
+.buttons-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: calc(300px - 5px * 2);
+}
+
+.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: calc(300px - 5px * 2);
+  height: 50px;
+  font-size: 30px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 5px;
+  line-height: 50px;
+}
+
+.display--equation {
+  font-size: 20px;
+}
+
+.btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-style: outset;
+  height: 50px;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#3586a2), to(rgba(39, 121, 137, 0.397)));
+  background-image: linear-gradient(to top left, #3586a2, rgba(39, 121, 137, 0.397));
+  /** Pseudo classes **/
+  /** Animation **/
+}
+
+.btn--replaced {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.btn:hover {
+  background-image: radial-gradient(circle, #1a93a9bf, #acd6e6);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  background-image: radial-gradient(circle, #44b6ca66, #e9eef17d);
+  border-style: inset;
+}
+
+.btn-active {
+  -webkit-animation: buttActive .5s linear;
+          animation: buttActive .5s linear;
+  border-style: inset;
+}
+
+.btn-inactive {
+  border-style: outset;
+}
+
+/* ANIMATION */
+@-webkit-keyframes buttActive {
+  from {
+    background-image: radial-gradient(circle, #9ecad2bf, #fbf1f87a);
+  }
+  to {
+    background-image: radial-gradient(circle, #9ecad2bf, #fbf1f87a);
+  }
+}
+@keyframes buttActive {
+  from {
+    background-image: radial-gradient(circle, #9ecad2bf, #fbf1f87a);
+  }
+  to {
+    background-image: radial-gradient(circle, #9ecad2bf, #fbf1f87a);
+  }
+}
+/*# sourceMappingURL=index.css.map */
