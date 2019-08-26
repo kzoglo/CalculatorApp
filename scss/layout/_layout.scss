@@ -1,0 +1,63 @@
+/**********************
+* WRAPPERS
+**********************/
+
+/** Information **/
+#info-wrapper {
+    height: 50px;
+}
+
+/** Main content **/
+#main {
+    width: $main-width;
+    margin: 100px auto;
+    padding-bottom: 5px;
+    border-radius: 2%; 
+    background: linear-gradient(to top right, #72a4ca7d, #958ba7, #4273997d);
+    padding-top: 5px;
+    box-shadow: 2px 2px 8px;
+}
+
+/** Display and Buttons **/
+#buttons-wrapper {
+    width: $content-width;
+    margin: auto;
+}
+
+#display-wrapper {
+    @extend #buttons-wrapper;
+    background-color: #fffffff3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

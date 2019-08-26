@@ -1,0 +1,15 @@
+.display {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: $content-width;
+    height: 50px;
+    font-size: 30px;
+    justify-content: flex-end;
+    padding-right: 5px;
+    line-height: 50px;
+    
+    &--equation {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,19 @@
+.info {
+    background: rgb(170, 19, 19);
+    height: auto;
+    line-height: 2.5;
+    text-align: center;
+    display: none;
+
+    &--delete {
+        background: rgb(193, 255, 138);
+    }
+
+    &--delete-cont {
+        background: rgb(222, 21, 8);
+    }
+
+    &--toManyNumbs {
+        background: rgb(222, 94, 5);
+    }
+}
