@@ -141,13 +141,13 @@ function shortenNumber(Butts){
 
 // Adds animation of button's press 
 function addRemoveClass(node) {
-    node.classList.add('button-active');
+    node.classList.add(elements.activeClass);
     setTimeout(removeActiveClass,250,node);
 }
 
 // Removes animation of button's press
 function removeActiveClass(node) {
-    node.classList.remove('button-active');
+    node.classList.remove(elements.activeClass);
 }
 
 // Activates the information bar which go down from the top of the page (only if is not present at the time of invocation)

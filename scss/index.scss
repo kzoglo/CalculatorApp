@@ -1,0 +1,18 @@
+/* VARIABLES */
+@import "./vars/vars";
+
+/* BASE RULES */
+@import "./base/base";
+
+/* LAYOUT RULES */
+@import "./layout/layout";
+
+/* MODULES RULES */
+@import "./modules/info";
+@import "./modules/buttons-row";
+@import "./modules/display";
+@import "./modules/btn";
+
+/* ANIMATION */
+@import "./animation/animation";
+
